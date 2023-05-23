@@ -2,7 +2,10 @@ name: Test application
 
 on:
   push:
-    branches: ['dev']
+    branches: 
+      - 'dev'
+    paths: 
+      - '**.go'
 
 jobs:
   test:
